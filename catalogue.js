@@ -1,4 +1,4 @@
-
+/**This is the parent class which shares some commonality with its subclasses*/
 class School{
     constructor(name, level, numberOfStudents){
       this._name=name;
@@ -47,6 +47,7 @@ class School{
         return this._sportsTeams;
       }
       }
+/**The subclass that inherits from its parents class School*/
   class PrimarySchool extends School{
     constructor(name, numberOfStudents, pickupPolicy){
      super(name, "primary", numberOfStudents);
